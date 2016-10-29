@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<a href="login.html">Login</a>
+
+<input type="button" value="friends"/>
+<input type="button" value="music"/>
+
+<span th:text="${name}">List of Seed Starters</span>
+
+<div th:each="n : ${names}">
+    <span th:text="${n}"></span>
+</div>
+
+
+</body>
+</html>
